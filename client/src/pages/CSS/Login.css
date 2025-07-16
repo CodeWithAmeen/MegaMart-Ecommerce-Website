@@ -1,0 +1,148 @@
+/* src/pages/CSS/Login.css */
+.login-container {
+  max-width: 400px;
+  margin: 200px auto;  /* Keeping the margin-top as per your request */
+  padding: 2rem;
+  margin-bottom: -30px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.login-container h1 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 2.5rem;  /* Larger font size for the heading */
+}
+
+.login-container form {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.login-container label {
+  font-weight: bold;
+  margin-bottom: 0.75rem;  /* Space between label and input */
+  font-size: 1.4rem;  /* Larger font size for labels */
+}
+
+.login-container input {
+  padding: 1rem;  /* Increased padding for better usability */
+  margin-bottom: 1.25rem;  /* Increased margin for spacing */
+  border: 1px solid #ddd;
+  border-radius: 6px;  /* Slightly larger border-radius */
+  font-size: 1.3rem;  /* Larger font size for input text */
+  margin-left: 10px;
+}
+
+.login-container button {
+  padding: 1rem;
+  background-color: #d0d31d;
+  color: #fff;
+  border: none;
+  border-radius: 6px;  /* Slightly larger border-radius */
+  cursor: pointer;
+  font-size: 1.4rem;  /* Larger font size for the button */
+}
+
+.login-container button:hover {
+  background-color: #4e4e4e;
+}
+
+.signup-link {
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.signup-link a {
+  color: #007bff;
+  text-decoration: none;
+  font-size: 1.5rem;  /* Larger font size for the signup link */
+}
+
+.signup-link a:hover {
+  text-decoration: underline;
+}
+
+.social-login {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.social-login p {
+  margin-bottom: 1.25rem;
+  font-size: 1.4rem;  /* Larger font size for social login text */
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;  /* Increased gap between social icons */
+}
+
+.social-icons button {
+  display: flex;
+  align-items: center;
+  padding: 1rem 1.75rem;  /* Increased padding for buttons */
+  border: 1px solid #ddd;
+  border-radius: 6px;  /* Slightly larger border-radius */
+  background-color: #000000;
+  cursor: pointer;
+  font-size: 1.1rem;  /* Larger font size for social buttons */
+  color: silver;
+  gap: 0.75rem;  /* Increased gap between icon and text */
+}
+
+.social-icons button:hover {
+  background-color: #f1f1f1;
+}
+
+.social-icons button svg {
+  font-size: 1.5rem;  /* Larger font size for social icons */
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .login-container {
+      padding: 1.5rem;
+  }
+  .login-container h1 {
+      font-size: 3rem;  /* Slightly smaller heading for smaller screens */
+  }
+  .login-container form {
+      padding: 30px;
+  }
+  .login-container label,
+  .login-container input,
+  .login-container button,
+  .signup-link a {
+      font-size: 1.2rem;  /* Adjusting font size for smaller screens */
+  }
+  .social-icons button {
+      padding: 0.8rem 1.5rem;  /* Adjusting padding for buttons */
+  }
+}
+
+@media (max-width: 480px) {
+  .login-container {
+      width: 90%;  /* Full width for smaller screens */
+      margin: 100px auto;
+      margin-top: 200px;  /* Reduce the vertical margin */
+  }
+  .login-container h1 {
+      font-size: 2.5rem;  /* Adjust heading size */
+  }
+  .login-container form {
+      padding: 20px;
+  }
+  .login-container label,
+  .login-container input,
+  .login-container button,
+  .signup-link a {
+      font-size: 1rem;  /* Adjust font size for very small screens */
+  }
+  .social-icons button {
+      padding: 0.6rem 1.2rem;  /* Adjust button padding */
+  }
+}
